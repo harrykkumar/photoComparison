@@ -1,1 +1,31 @@
-{{title}}
+
+ 
+  <div   class="col-md-5">
+    <div class="row bord">
+      <div class="col-md-5 box-space" *ngFor="let item of allPhotoList; let i=index">
+        <div class="card card-wrapper radius">
+          <img src="{{item?.thumbnailUrl}}" class="demo-img bord">
+          <button (click)="comparePhoto(item,i)" type="button" class="btn btn-success"> COMPARE</button>
+            <div class="card-content">
+                <h4><a href="javascript:void(0);">{{item.id}}</a></h4>
+               <div> <label><b>AlbumId :</b></label><span>{{item.albumId}}</span></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="float: right;" class="col-md-5 fixed-top">
+    
+    <app-photo></app-photo>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+

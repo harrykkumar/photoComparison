@@ -1,0 +1,23 @@
+<div class="scroll">
+    <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">ID</th>
+            <th scope="col">URL</th>
+            <th scope="col">Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let selectitem of Selectedlist; let i =index"  >
+                <th scope="row" >
+                    <img   src="{{selectitem?.thumbnailUrl}}" class="demo-img bord">
+                </th>
+            <td>{{selectitem.id}}</td>
+            <td>{{selectitem.url}}</td>
+            <td>{{selectitem.title}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
